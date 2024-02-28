@@ -12,30 +12,22 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
-            android:id="@+id/question"
+            android:id="@+id/itemValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/amountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addToList"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView" />
-
-        <RadioGroup
-            android:id="@+id/answer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/trueRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="True" />
-
-            <RadioButton
-                android:id="@+id/falseRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="False" />
-
-        </RadioGroup>
+            android:text="Add to List" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
